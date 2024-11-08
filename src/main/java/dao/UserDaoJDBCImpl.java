@@ -1,6 +1,5 @@
 package dao;
 
-import lombok.Data;
 import model.User;
 import util.Util;
 
@@ -9,7 +8,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
+
 public class UserDaoJDBCImpl implements UserDao {
 
     private static final String CREATE_TABLE_SQL = "CREATE TABLE IF NOT EXISTS users " +
