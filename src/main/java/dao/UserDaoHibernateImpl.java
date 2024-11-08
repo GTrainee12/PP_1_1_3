@@ -1,12 +1,13 @@
 package dao;
 
-import lombok.NoArgsConstructor;
 import model.User;
 
 import java.util.List;
 
-@NoArgsConstructor
 public class UserDaoHibernateImpl implements UserDao {
+
+    public UserDaoHibernateImpl() {
+    }
 
     @Override
     public void createUsersTable() {

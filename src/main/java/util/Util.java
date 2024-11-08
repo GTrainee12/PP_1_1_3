@@ -1,7 +1,5 @@
 package util;
 
-import lombok.NoArgsConstructor;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
@@ -9,9 +7,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-@NoArgsConstructor
 public class Util {
     private static Connection conn = null;
+
+    public Util() {
+    }
 
 
     public static synchronized Connection getConnection() throws SQLException, IOException {
